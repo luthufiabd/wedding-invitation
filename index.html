@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wedding Invitation</title>
+<meta name="theme-color" content="#FBF6EC">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="geo-border" aria-hidden="true"></div>
+
+<div class="wrap">
+
+  <!-- ============================================================
+       HERO
+  ============================================================ -->
+  <header class="hero">
+    <p class="bismillah-arabic" id="bismillahArabic">بِسْمِ ٱللَّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ</p>
+    <p class="bismillah-translit" id="bismillahTranslit">Bismillāhi r-raḥmāni r-raḥīm</p>
+
+    <p class="eyebrow">An Invitation</p>
+
+    <h1 class="names">
+      <span id="groomName">Groom's Name</span>
+      <span class="amp">&amp;</span>
+      <span id="brideName">Bride's Name</span>
+    </h1>
+
+    <p class="parents" id="groomParents">S/o Father &amp; Mother</p>
+    <p class="parents" id="brideParents">D/o Father &amp; Mother</p>
+
+    <p class="tagline" id="tagline">Together with their families, request the honour of your presence</p>
+  </header>
+
+  <div class="divider" aria-hidden="true">
+    <svg viewBox="0 0 120 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M2 12 Q30 2 56 12" stroke="var(--gold)" stroke-width="1.1"/>
+      <path d="M118 12 Q90 2 64 12" stroke="var(--gold)" stroke-width="1.1"/>
+      <rect x="57.5" y="9.5" width="5" height="5" transform="rotate(45 60 12)" fill="var(--maroon)"/>
+      <circle cx="30" cy="7" r="1.6" fill="var(--gold)"/>
+      <circle cx="90" cy="7" r="1.6" fill="var(--gold)"/>
+    </svg>
+  </div>
+
+  <!-- ============================================================
+       COUNTDOWN
+  ============================================================ -->
+  <section class="countdown reveal" aria-label="Countdown">
+    <p class="eyebrow">Counting down to <span id="eventNameCountdown">the Waleema</span></p>
+    <div class="countdown-grid">
+      <div class="countdown-unit"><span id="cdDays">00</span><label>Days</label></div>
+      <div class="countdown-unit"><span id="cdHours">00</span><label>Hours</label></div>
+      <div class="countdown-unit"><span id="cdMins">00</span><label>Minutes</label></div>
+      <div class="countdown-unit"><span id="cdSecs">00</span><label>Seconds</label></div>
+    </div>
+  </section>
+
+  <div class="divider" aria-hidden="true">
+    <svg viewBox="0 0 120 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M2 12 Q30 2 56 12" stroke="var(--gold)" stroke-width="1.1"/>
+      <path d="M118 12 Q90 2 64 12" stroke="var(--gold)" stroke-width="1.1"/>
+      <rect x="57.5" y="9.5" width="5" height="5" transform="rotate(45 60 12)" fill="var(--maroon)"/>
+      <circle cx="30" cy="7" r="1.6" fill="var(--gold)"/>
+      <circle cx="90" cy="7" r="1.6" fill="var(--gold)"/>
+    </svg>
+  </div>
+
+  <!-- ============================================================
+       EVENT CARD
+  ============================================================ -->
+  <section class="event-card reveal">
+    <p class="eyebrow" id="eventNameLabel">The Waleema</p>
+    <h2 id="eventDateDisplay">—</h2>
+    <p class="hijri" id="eventHijri"></p>
+    <p class="time" id="eventTime"></p>
+
+    <div class="venue-block">
+      <p class="venue-name" id="venueName"></p>
+      <p class="venue-address" id="venueAddress"></p>
+      <p class="dress-code" id="dressCodeRow">Dress code: <span id="dressCode"></span></p>
+    </div>
+
+    <a class="map-embed" id="mapLinkBox" href="#" target="_blank" rel="noopener" aria-label="Open venue location in Google Maps">
+      <img class="venue-map-img" src="assets/venue-map.jpg" alt="Illustrated map showing Fora Castle Auditorium in Chemrakkattur, Kerala">
+      <span class="map-link-text">Tap to view on Google Maps</span>
+    </a>
+
+    <div class="action-row">
+      <a id="directionsLink" class="btn btn--ghost" href="#" target="_blank" rel="noopener">Get Directions</a>
+      <button id="addCalendarBtn" type="button" class="btn btn--ghost">Add to Calendar</button>
+    </div>
+  </section>
+
+  <div class="divider" aria-hidden="true">
+    <svg viewBox="0 0 120 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M2 12 Q30 2 56 12" stroke="var(--gold)" stroke-width="1.1"/>
+      <path d="M118 12 Q90 2 64 12" stroke="var(--gold)" stroke-width="1.1"/>
+      <rect x="57.5" y="9.5" width="5" height="5" transform="rotate(45 60 12)" fill="var(--maroon)"/>
+      <circle cx="30" cy="7" r="1.6" fill="var(--gold)"/>
+      <circle cx="90" cy="7" r="1.6" fill="var(--gold)"/>
+    </svg>
+  </div>
+
+  <!-- ============================================================
+       RSVP
+  ============================================================ -->
+  <section class="rsvp reveal" id="rsvpSection">
+    <p class="eyebrow">Will you be there?</p>
+    <h2>RSVP</h2>
+
+    <form id="rsvpForm">
+      <div class="field">
+        <label for="guestName">Your name</label>
+        <input type="text" id="guestName" placeholder="e.g. Aisha Rahman" autocomplete="name">
+      </div>
+
+      <div class="toggle-row">
+        <button type="button" class="toggle-btn" data-choice="accept" id="acceptBtn">Joyfully Accept</button>
+        <button type="button" class="toggle-btn" data-choice="decline" id="declineBtn">Regretfully Decline</button>
+      </div>
+
+      <div class="guest-count-row" id="guestCountRow" hidden>
+        <label>Guests, including you</label>
+        <div class="stepper">
+          <button type="button" id="stepDown" aria-label="Decrease guest count">−</button>
+          <span id="guestCount">1</span>
+          <button type="button" id="stepUp" aria-label="Increase guest count">+</button>
+        </div>
+      </div>
+
+      <button type="submit" class="btn btn--primary" id="rsvpSubmit" disabled>Send RSVP</button>
+    </form>
+
+    <div class="rsvp-thanks" id="rsvpThanks" hidden>
+      <div class="ornament" aria-hidden="true">
+        <svg viewBox="0 0 120 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M2 12 Q30 2 56 12" stroke="var(--gold)" stroke-width="1.1"/>
+          <path d="M118 12 Q90 2 64 12" stroke="var(--gold)" stroke-width="1.1"/>
+          <rect x="57.5" y="9.5" width="5" height="5" transform="rotate(45 60 12)" fill="var(--maroon)"/>
+        </svg>
+      </div>
+      <p id="rsvpThanksMsg">Thank you!</p>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER / BLESSING
+  ============================================================ -->
+  <footer class="blessing">
+    <div class="ornament" aria-hidden="true">
+      <svg viewBox="0 0 120 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M2 12 Q30 2 56 12" stroke="var(--gold)" stroke-width="1.1"/>
+        <path d="M118 12 Q90 2 64 12" stroke="var(--gold)" stroke-width="1.1"/>
+        <rect x="57.5" y="9.5" width="5" height="5" transform="rotate(45 60 12)" fill="var(--maroon)"/>
+      </svg>
+    </div>
+    <p class="dua-arabic" id="duaArabic">بَارَكَ اللّٰهُ لَكُمَا وَجَمَعَ بَيْنَكُمَا فِي خَيْرٍ</p>
+    <p class="dua-translation" id="duaTranslation">May Allah bless you both and join you together in goodness.</p>
+    <p class="signature">With love, <span id="footerNames">Groom &amp; Bride</span></p>
+    <p class="made-with">Made with care, for family and friends</p>
+    <button type="button" id="hostDashboardLink" class="host-link">Host dashboard</button>
+  </footer>
+
+  <!-- ============================================================
+       HOST DASHBOARD (private — see who has responded)
+  ============================================================ -->
+  <section class="host-dashboard" id="hostDashboard" hidden>
+    <div class="host-gate" id="hostGate">
+      <p class="eyebrow">Host Access</p>
+      <input type="password" id="hostPasscodeInput" placeholder="Passcode" inputmode="numeric" autocomplete="off">
+      <button type="button" id="hostUnlockBtn" class="btn btn--primary">Unlock</button>
+      <p class="host-error" id="hostError" hidden>That's not quite right — try again.</p>
+      <button type="button" id="hostCloseBtn" class="host-link">Close</button>
+    </div>
+
+    <div class="host-panel" id="hostPanel" hidden>
+      <p class="eyebrow">Who's Coming</p>
+      <div class="host-summary">
+        <div class="host-stat"><span id="statAccepted">0</span><label>Accepted</label></div>
+        <div class="host-stat"><span id="statDeclined">0</span><label>Declined</label></div>
+        <div class="host-stat"><span id="statGuests">0</span><label>Total Guests</label></div>
+      </div>
+      <div class="host-actions">
+        <button type="button" id="refreshBtn" class="btn btn--ghost">Refresh</button>
+        <button type="button" id="lockBtn" class="host-link">Lock</button>
+      </div>
+      <div class="host-list" id="hostList"></div>
+    </div>
+  </section>
+
+</div>
+
+<div class="geo-border" aria-hidden="true"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
