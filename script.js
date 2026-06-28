@@ -9,7 +9,7 @@ const CONFIG = {
   groomName:    "Luthufi Abdullatheef",
   groomParents: "S/o Abdullatheef Kunhahammed & Sunnera Thayyil",   // leave '' to hide
   brideName:    "Lujeen Abdul Jabbar",
-  brideParents: "D/o Abdul Jabbar Kunnath Kalathingal & Suneera Abdul Majeed",   // leave '' to hide
+  brideParents: "D/o Abdul Jabbar Kunnath Kalathingal & Suneera MA",   // leave '' to hide
 
   tagline: "Together with their families, request the honour of your presence",
 
