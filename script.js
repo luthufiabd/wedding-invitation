@@ -6,8 +6,8 @@
 const CONFIG = {
 
   // ---- Couple -----------------------------------------------------
-  groomName:    "Luthufi Abdullatheef",
-  groomParents: "S/o Abdullatheef Kunhahammed & Sunnera Thayyil",   // leave '' to hide
+  groomName:    "Luthufi Abdul Latheef",
+  groomParents: "S/o Abdul Latheef Kunhahammed & Sunnera Thayyil",   // leave '' to hide
   brideName:    "Lujeen Abdul Jabbar",
   brideParents: "D/o Abdul Jabbar Kunnath Kalathingal & Suneera MA",   // leave '' to hide
 
