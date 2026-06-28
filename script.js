@@ -18,7 +18,7 @@ const CONFIG = {
   // Date & time the event starts. Keep the format YYYY-MM-DDTHH:MM:SS+05:30
   // (the +05:30 is the India time zone offset — change it if you're elsewhere).
   eventDateISO: "2026-08-16T11:00:00+05:30",
-  eventTimeLabel: "11:00 AM – 2:00 PM",    // free text shown under the date
+  eventTimeLabel: "11:00 AM – 2:30 PM",    // free text shown under the date
   eventDurationHours: 3,                // used only for the "Add to Calendar" file
 
   // Optional Hijri date. If left blank, the page tries to estimate one
